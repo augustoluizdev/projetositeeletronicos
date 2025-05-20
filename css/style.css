@@ -1,58 +1,63 @@
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 2%;
 }
 
 header {
-    background-color: rgb(75, 75, 221);
-    margin: 5px;
-    border-radius: 10px;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    color: white;
+    padding: 20px;
+    background-color: #001538;
 }
 
-header img {
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    position: absolute;
-    top: 15px;
-    left: 10px;
+.logo{
+    width: 50%;
 }
 
-nav a {
-    display: flex;
-    justify-content: center;
+.menu{
+    padding-top: 30px;
+    width: 50%;
+    text-align: right;
+}
+
+.menu a{
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
+    margin-right: 15px;
 }
 
 .inicio {
     text-align: center;
     margin-top: 60 px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 50 px;
 }
+
 
 .produtos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 60px;
-    background-color: rgb(255, 255, 255);
-    height: 650px;
+    background-color: #001538;
+    width: auto;
 }
 
 .item {
-    background-color: rgb(101, 106, 182);
+    background-color: #001538;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    height: 300px;
+    width: 20%;
     align-content: center;
     text-align: center;
 }
@@ -66,7 +71,7 @@ nav a {
 }  
 
 .item button {
-    background-color: rgb(21, 27, 102);
+    background-color: #001538;
     color: white;
     border:#000000;
     padding: 10px;
