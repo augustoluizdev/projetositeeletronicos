@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(to right, #2575fc, #001538);
+    background: linear-gradient(to right, #001538 , #2575fc,  #001538);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,8 +53,8 @@ input[type="text"] {
     background-color: transparent;
 }
 
-input[type="text"]:focus {as
-    border-color: #2575fc
+input[type="text"]:focus {
+    border-color: #2575fc;
     outline: none;
 }
 
