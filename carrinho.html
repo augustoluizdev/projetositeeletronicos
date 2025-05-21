@@ -4,21 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/carrinho.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Carrinho de Compras</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="imagens/logo1.png" alt="logo do header" width="70px">
+            <img src="imagens/logo1.png" alt="logo do header" width="70px" style="border-radius: 10px;">
         </div>
         <span style="font-size: 26px;">Seu carrinho</span>
         <nav>
-            <a href="projeto.html">Menu</a>
+            <a href="projeto.html"><i class='bx  bx-home' style="color: white;"></i></a>
+            <a href="projeto.html">Home</a>
         </nav>
     </header>
     <main>
         <div class="carrinho">
-            <section>Listagem de  produtos</section>
+            <section>
+                <table>
+                    <thead  style="width: 100%;">
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>-</th>
+                        </tr>
+                    </thead>
+                    <tbody style="width: 100%;">
+                        <tr>
+                            <td>
+                                <div class="produto">
+                                    <div class="pimagem">
+                                        <img src="imagens/logo1.png" alt="Profuto 1">
+                                    </div>
+                                    <div class="descricao">
+                                        <span>Produto 1</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$100,00</td>
+                            <td>
+                                <div class="qnt">
+                                    <button class="menos" style="min-width: 18px;">-</button>
+                                    <span>2</span>
+                                    <button class="mais" style="min-width: 18px;">+</button>
+                                </div>
+                            </td>
+                            <td>R$200,00</td>
+                            <td><button class="x_circle"><i class='bx  bx-x-circle'></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="produto">
+                                    <div class="pimagem">
+                                        <img src="imagens/logo1.png" alt="Profuto 1">
+                                    </div>
+                                    <div class="descricao">
+                                        <span>Produto 2</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$100,00</td>
+                            <td>
+                                <div class="qnt">
+                                    <button class="menos" style="min-width: 18px;">-</button>
+                                    <span>2</span>
+                                    <button class="mais" style="min-width: 18px;">+</button>
+                                </div>
+                            </td>
+                            <td>R$200,00</td>
+                            <td><button class="x_circle"><i class='bx  bx-x-circle'></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="produto">
+                                    <div class="pimagem">
+                                        <img src="imagens/logo1.png" alt="Profuto 1">
+                                    </div>
+                                    <div class="descricao">
+                                        <span>Produto 3</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$100,00</td>
+                            <td>
+                                <div class="qnt">
+                                    <button class="menos" style="min-width: 18px;">-</button>
+                                    <span>2</span>
+                                    <button class="mais" style="min-width: 18px;">+</button>
+                                </div>
+                            </td>
+                            <td>R$200,00</td>
+                            <td><button class="x_circle"><i class='bx  bx-x-circle'></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="produto">
+                                    <div class="pimagem">
+                                        <img src="imagens/logo1.png" alt="Profuto 1">
+                                    </div>
+                                    <div class="descricao">
+                                        <span>Produto 4</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$100,00</td>
+                            <td>
+                                <div class="qnt">
+                                    <button class="menos" style="min-width: 18px;">-</button>
+                                    <span>2</span>
+                                    <button class="mais" style="min-width: 18px;">+</button>
+                                </div>
+                            </td>
+                            <td>R$200,00</td>
+                            <td><button class="x_circle"><i class='bx  bx-x-circle'></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
             <aside>Resumo da compra</aside>
         </div>
     </main>

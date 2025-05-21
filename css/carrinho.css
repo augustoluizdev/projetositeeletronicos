@@ -23,6 +23,13 @@ span {
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bx {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
 .carrinho {
@@ -41,8 +48,49 @@ section {
 
 aside {
     min-width: 260px;
-    min-height: 200px;
     padding: 15px 15px;
     border-radius: 10px;
     background-color: #001538;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 10px 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 20px 10px;
+    border-top: 3px solid #999999;
+}
+
+.x_circle {
+    border-radius: 100%;
+    background-color: rgb(139, 135, 135);
+
+}
+
+.bx {
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pimagem img {
+    width: 90px;
+    border-radius: 7px;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
 }
