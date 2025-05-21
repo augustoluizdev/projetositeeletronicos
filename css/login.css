@@ -14,10 +14,10 @@ body {
 }
 
 form {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.459);
     padding: 40px 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 400px;
 }
@@ -41,20 +41,24 @@ label {
     color: #444;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
     width: 100%;
     padding: 12px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1em;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s;
     box-shadow: 0 0 10px white;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     background-color: transparent;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="password"]:focus {
     border-color: #2575fc;
+    box-shadow: 0 0 12px #2575fc;
     outline: none;
 }
 
@@ -63,18 +67,18 @@ input[type="submit"] {
     padding: 12px;
     margin-top: 20px;
     background-color: transparent;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     border: none;
     border-radius: 8px;
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
     box-shadow: 0 0 10px white;
 }
 
-input[type="subimit"]:hover {
-    background-color: #1a5bd2;
+input[type="submit"]:hover {
+    background-color: #1a5ad2;
 }
 
 label {
