@@ -18,7 +18,7 @@
 header {
     padding: 20px;
     height: 100px;
-    background-color: #001538;
+    background: linear-gradient(to right, #001538 , #2575fc,  #001538);
     margin: 0px;
     padding: 0px;
 }
@@ -72,13 +72,13 @@ header img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: linear-gradient(to bottom right, #669bf8 , #002c79);
     margin-top: 60px;
-    background-color: white;
     height: 650px;
 }
 
 .item {
-    background-color: #001538;
+    background: linear-gradient(to bottom right, #001538 , #2575fc);
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
@@ -98,7 +98,7 @@ header img{
 }  
 
 .item button {
-    background-color: #001538;
+    background-color: #ffffff;
     color: white;
     border:#000000;
     padding: 10px;
@@ -111,6 +111,6 @@ button a {
     text-decoration: none;
     background-color: white;
     border-radius: 5px;
-    padding: 5px 5px;
+    padding: 10px;
     color: #001538;
 }

@@ -11,7 +11,7 @@ header {
     display: flex;
     align-items: center;
     padding: 15px 20px;
-    background-color: #001538;
+    background: linear-gradient(to right, #001538 , #2575fc,  #001538);
     color: white;
 }
 
@@ -43,14 +43,14 @@ section {
     flex: 1;
     padding: 15px 15px;
     border-radius: 10px;
-    background-color: #395a94;
+    background: linear-gradient(to bottom, #395a94, #808080);
 }
 
 aside {
     min-width: 260px;
     padding: 15px 15px;
     border-radius: 10px;
-    background-color: #001538;
+    background: linear-gradient(to bottom, #001538, #808080);
 }
 
 table {
@@ -72,8 +72,7 @@ td {
 
 .x_circle {
     border-radius: 100%;
-    background-color: rgb(139, 135, 135);
-
+    background-color: #8b8787;
 }
 
 .bx {
