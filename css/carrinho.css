@@ -11,7 +11,7 @@ header {
     display: flex;
     align-items: center;
     padding: 15px 20px;
-    background: linear-gradient(to right, #001538 , #2575fc,  #001538);
+    background: linear-gradient(to right, #001538 , #2575fc);
     color: white;
 }
 
@@ -27,9 +27,12 @@ nav a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.bx {
+.bx:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease, box-shadow 0.3s ease;
 }
 
 .carrinho {
