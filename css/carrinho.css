@@ -29,9 +29,7 @@ nav a {
 
 .bx:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    color: rgba(255, 255, 255, 0.566);
     transition: 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -46,14 +44,14 @@ section {
     flex: 1;
     padding: 15px 15px;
     border-radius: 10px;
-    background: linear-gradient(to bottom, #395a94, #808080);
+    background: linear-gradient(to bottom, #001538, #2575fc);
 }
 
 aside {
     min-width: 260px;
     padding: 15px 15px;
     border-radius: 10px;
-    background: linear-gradient(to bottom, #001538, #808080);
+    background: linear-gradient(to bottom, #001538, #2575fc);
 }
 
 table {
