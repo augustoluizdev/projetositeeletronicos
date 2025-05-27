@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Carrinho de Compras</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -21,7 +23,7 @@
         <div class="carrinho">
             <section>
                 <table>
-                    <thead  style="width: 100%;">
+                    <thead style="width: 100%;">
                         <tr>
                             <th>Produto</th>
                             <th>Preço</th>
@@ -35,14 +37,14 @@
                             <td>
                                 <div class="produto">
                                     <div class="pimagem">
-                                        <img src="imagens/logo1.png" alt="Profuto 1">
+                                        <img src="imagens/imgprodutos/fone_destaqueprod1.png" alt="Produto 1">
                                     </div>
                                     <div class="descricao">
-                                        <span>Produto 1</span>
+                                        <span>Fone de Ouvido Bluetooth</span>
                                     </div>
                                 </div>
                             </td>
-                            <td>R$100,00</td>
+                            <td>R$ 350,00</td>
                             <td>
                                 <div class="qnt">
                                     <button class="menos" style="min-width: 18px;">-</button>
@@ -57,14 +59,14 @@
                             <td>
                                 <div class="produto">
                                     <div class="pimagem">
-                                        <img src="imagens/logo1.png" alt="Profuto 1">
+                                        <img src="imagens/imgprodutos/Placadevideo.png" alt="Profuto 2">
                                     </div>
                                     <div class="descricao">
-                                        <span>Produto 2</span>
+                                        <span>RTX 5090 NVIDIA</span>
                                     </div>
                                 </div>
                             </td>
-                            <td>R$100,00</td>
+                            <td>R$ 24.599,00</td>
                             <td>
                                 <div class="qnt">
                                     <button class="menos" style="min-width: 18px;">-</button>
@@ -79,14 +81,14 @@
                             <td>
                                 <div class="produto">
                                     <div class="pimagem">
-                                        <img src="imagens/logo1.png" alt="Profuto 1">
+                                        <img src="imagens/imgprodutos/Tecladoprod3.png" alt="Profuto 1">
                                     </div>
                                     <div class="descricao">
-                                        <span>Produto 3</span>
+                                        <span>Teclado Gamer - Preto</span>
                                     </div>
                                 </div>
                             </td>
-                            <td>R$100,00</td>
+                            <td>R$ 659,99</td>
                             <td>
                                 <div class="qnt">
                                     <button class="menos" style="min-width: 18px;">-</button>
@@ -101,14 +103,14 @@
                             <td>
                                 <div class="produto">
                                     <div class="pimagem">
-                                        <img src="imagens/logo1.png" alt="Profuto 1">
+                                        <img src="imagens/imgprodutos/Gabineteprod4.png" alt="Profuto 1">
                                     </div>
                                     <div class="descricao">
-                                        <span>Produto 4</span>
+                                        <span>Gabinete Gamer</span>
                                     </div>
                                 </div>
                             </td>
-                            <td>R$100,00</td>
+                            <td>R$ 649,90</td>
                             <td>
                                 <div class="qnt">
                                     <button class="menos" style="min-width: 18px;">-</button>
@@ -119,11 +121,87 @@
                             <td>R$200,00</td>
                             <td><button class="x_circle"><i class='bx  bx-x-circle'></i></button></td>
                         </tr>
+
+                        <tr>
+                            <td>
+                                <div class="produto">
+                                    <div class="pimagem">
+                                        <img src="imagens/imgprodutos/Placamaeprod5.png" alt="Profuto 1">
+                                    </div>
+                                    <div class="descricao">
+                                        <span>Placa Mãe Gigabyte</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$ 581,86</td>
+                            <td>
+                                <div class="qnt">
+                                    <button class="menos" style="min-width: 18px;">-</button>
+                                    <span>2</span>
+                                    <button class="mais" style="min-width: 18px;">+</button>
+                                </div>
+                            </td>
+                            <td>R$200,00</td>
+                            <td><button class="x_circle"><i class='bx  bx-x-circle'></i></button></td>
+                        </tr>
+
                     </tbody>
                 </table>
             </section>
             <aside>Resumo da compra</aside>
         </div>
     </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const atualizarTotal = () => {
+                const linhas = document.querySelectorAll("tbody tr");
+                let totalFinal = 0;
+
+                linhas.forEach((linha) => {
+                    const precoTexto = linha.querySelector("td:nth-child(2)").textContent.trim();
+                    const preco = parseFloat(precoTexto.replace("R$", "").replace(".", "").replace(",", "."));
+                    const quantidade = parseInt(linha.querySelector(".qnt span").textContent);
+                    const total = preco * quantidade;
+
+                    linha.querySelector("td:nth-child(4)").textContent = `R$ ${total.toFixed(2).replace(".", ",")}`;
+                    totalFinal += total;
+                });
+
+                // Atualiza o resumo (crie um espaço se ainda não houver)
+                let resumo = document.querySelector("aside");
+                resumo.innerHTML = `<h3>Resumo da compra</h3><p>Total: R$ ${totalFinal.toFixed(2).replace(".", ",")}</p>`;
+            };
+
+            // Lógica dos botões + e -
+            document.querySelectorAll(".qnt").forEach((qntDiv) => {
+                const menos = qntDiv.querySelector(".menos");
+                const mais = qntDiv.querySelector(".mais");
+                const span = qntDiv.querySelector("span");
+
+                mais.addEventListener("click", () => {
+                    span.textContent = parseInt(span.textContent) + 1;
+                    atualizarTotal();
+                });
+
+                menos.addEventListener("click", () => {
+                    const novaQnt = Math.max(1, parseInt(span.textContent) - 1);
+                    span.textContent = novaQnt;
+                    atualizarTotal();
+                });
+            });
+
+            // Remover item
+            document.querySelectorAll(".x_circle").forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    btn.closest("tr").remove();
+                    atualizarTotal();
+                });
+            });
+
+            atualizarTotal();
+        });
+    </script>
+
 </body>
+
 </html>
