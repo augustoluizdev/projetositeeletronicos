@@ -1,8 +1,7 @@
 /* Estilos Globais */
 body {
   font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +20,7 @@ ul {
 
 /* Header e Navegação */
 header {
-  background-color: #1e1e1e;
+   background: linear-gradient(to right, #001538, #2575fc);
 }
 
 .top-bar {
@@ -48,14 +47,14 @@ header {
 }
 
 .nav a {
-  color: #ffa500;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .nav a:hover {
-  color: #e69500;
+  color: #001538;
 }
 
 /* Opções do Usuário */
@@ -118,7 +117,7 @@ header {
 }
 
 .gallery-thumbnails img:hover {
-  border: 2px solid #ffa500;
+  border: 2px solid #001538;
 }
 
 /* Informações do Produto */
@@ -135,7 +134,7 @@ header {
 .product-info h2 {
   font-size: 2.5rem;
   margin: 10px 0;
-  color: #e0e0e0;
+  color: #001538;
 }
 
 .product-code {
@@ -146,7 +145,7 @@ header {
 
 .price {
   font-size: 2rem;
-  color: #ffa500;
+  color: #001538;
   margin: 10px 0;
 }
 
@@ -159,7 +158,7 @@ header {
 .product-description {
   font-size: 1rem;
   line-height: 1.6;
-  color: #b0b0b0;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -198,7 +197,7 @@ header {
 
 .add-to-cart {
   padding: 15px 30px;
-  background-color: #1e1e1e;
+  background-color: #001538;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -207,23 +206,10 @@ header {
 }
 
 .add-to-cart:hover {
-  background-color: #388e3c;
+  background-color: #2575fc;
 }
 
-.add-to-wishlist {
-  padding: 15px 30px;
-  background-color: #1e1e1e;
-  color: #ffa500;
-  border: 2px solid #ffa500;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s;
-}
 
-.add-to-wishlist:hover {
-  background-color: #1e1e1e;
-  color: #fff;
-}
 
 .delivery {
   margin-top: 20px;
@@ -234,7 +220,7 @@ header {
 /* Especificações do Produto */
 .product-specs {
   margin-top: 40px;
-  background-color: #1e1e1e;
+  background-color: #001538;
   padding: 20px;
   border-radius: 10px;
 }
@@ -251,16 +237,16 @@ header {
   list-style: none;
   font-weight: bold;
   cursor: pointer;
-  color: #777;
+  color: white;
 }
 
 .tabs li:hover {
-  color: #ffa500;
+  color: #2575fc;
 }
 
 .specs-content p {
   font-size: 1rem;
-  color: #b0b0b0;
+  color: white;
   margin: 10px 0;
 }
 
@@ -285,6 +271,7 @@ header {
   .nav {
     flex-wrap: wrap;
     justify-content: center;
+    color: white;
   }
 
   .buttons {
@@ -313,10 +300,12 @@ header {
 
   .nav a {
     font-size: 0.9rem;
+    color: white;
   }
 
   .product-info h2 {
     font-size: 2rem;
+    color: #001538;
   }
 
   .price {
