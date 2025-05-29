@@ -11,7 +11,7 @@ header {
     display: flex;
     align-items: center;
     padding: 15px 20px;
-    background: linear-gradient(to right, #001538 , #2575fc);
+    background: linear-gradient(to right, #001538, #2575fc);
     color: white;
 }
 
@@ -93,4 +93,50 @@ td {
     align-items: center;
     gap: 20px;
     font-size: 20px;
+}
+
+#comprar {
+  background-color: #2575fc;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+#comprar:hover {
+  background-color: #1a5fd6;
+}
+
+
+.qnt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qnt button {
+  background-color: #2575fc;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.qnt button:hover {
+  background-color: #1a5fd6;
+}
+
+.x_circle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff4c4c;
+  font-size: 20px;
 }
