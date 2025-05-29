@@ -32,8 +32,13 @@
     </header>
 
     <div class="banner">
-        <img src="imagens/promoção.png" alt="Banner de Promoção">
+        <div class="conteiner-imagens">
+            <img src="imagens/promoção.png" alt="Banner de Promoção" class="slider">
+            <img src="imagens/5090.png" alt="Banner de Promoção" class="slider">
+        </div>
+
     </div>
+
 
     <section class="produtos">
 
@@ -42,7 +47,7 @@
             <h3>Fone de Ouvido Bluetooth</h3>
 
             <p class="preco_original">De <span>R$ 350,00</span></p>
-            <p class="preco_desconto">Por R$ 105,00</p>
+            <p class="preco_desconto">Por R$ 245,00</p>
             <p class="desconto">-30%</p>
             <button class="botao" onclick="event.stopPropagation(); location.href='carrinho.html'">
                 Adicionar ao carrinho
@@ -56,7 +61,7 @@
             <h3>Placa de video RTX 5090</h3>
 
             <p class="preco_original">De <span>R$ 24.599,00</span></p>
-            <p class="preco_desconto">Por R$ 7379,7</p>
+            <p class="preco_desconto">Por R$ 17.219,90</p>
             <p class="desconto">-30%</p>
             <button class="botao" onclick="event.stopPropagation(); location.href='carrinho.html'">
                 Adicionar ao carrinho
@@ -68,7 +73,7 @@
             <h3>Teclado Gamer</h3>
 
             <p class="preco_original">De <span>R$ 659,99</span></p>
-            <p class="preco_desconto">Por R$ 197,99</p>
+            <p class="preco_desconto">Por R$ 461,99</p>
             <p class="desconto">-30%</p>
             <button class="botao" onclick="event.stopPropagation(); location.href='carrinho.html'">
                 Adicionar ao carrinho
@@ -80,7 +85,7 @@
             <h3>Gabinete Gamer</h3>
 
             <p class="preco_original">De <span>R$ 649,90</span></p>
-            <p class="preco_desconto">Por R$ 194,97</p>
+            <p class="preco_desconto">Por R$ 454,90</p>
             <p class="desconto">-30%</p>
             <button class="botao" onclick="event.stopPropagation(); location.href='carrinho.html'">
                 Adicionar ao carrinho
@@ -92,7 +97,7 @@
             <h3>Placa mãe Gigabyte</h3>
 
             <p class="preco_original">De <span>R$ 581,86</span></p>
-            <p class="preco_desconto">Por R$ 174,55</p>
+            <p class="preco_desconto">Por R$ 407,30</p>
             <p class="desconto">-30%</p>
             <button class="botao" onclick="event.stopPropagation(); location.href='carrinho.html'">
                 Adicionar ao carrinho
@@ -103,8 +108,8 @@
             <img src="imagens/imgprodutos/Memoriaramprod6.png" alt="Fone de Ouvido Bluetooth">
             <h3>Memória RAM DDR5</h3>
 
-            <p class="preco_original">De <span>R$ 2000,90</span></p>
-            <p class="preco_desconto">Por R$ 600.27</p>
+            <p class="preco_original">De <span>R$ 2.000,90</span></p>
+            <p class="preco_desconto">Por R$ 1.400,60</p>
             <p class="desconto">-30%</p>
             <button class="botao" onclick="event.stopPropagation(); location.href='carrinho.html'">
                 Adicionar ao carrinho
@@ -112,6 +117,25 @@
         </div>
 
     </section>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slider");
+
+        function showSlides() {
+            slides.forEach((slide, i) => {
+                slide.style.display = "none";
+            });
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Troca a cada 4 segundos
+        }
+
+        showSlides();
+    </script>
 
     <footer>
         <p>&copy; 2025 LDE - Todos os direitos reservados</p>

@@ -108,6 +108,18 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.conteiner-imagens {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  display: none;
+}
+
 .produtos {
     display: flex;
     flex-wrap: wrap;
@@ -184,7 +196,6 @@ footer {
 
 @media (max-width: 768px) {
     .center {
-        flex-direction: column;
         text-align: center;
     }
 
