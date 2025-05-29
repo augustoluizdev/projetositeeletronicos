@@ -152,6 +152,7 @@ header {
   font-size: 2rem;
   color: #001538;
   margin: 10px 0;
+  text-decoration: line-through;
 }
 
 .rating {
