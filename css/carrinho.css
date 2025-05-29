@@ -1,142 +1,140 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 
-header {
-    display: flex;
-    align-items: center;
-    padding: 15px 20px;
-    background: linear-gradient(to right, #001538, #2575fc);
-    color: white;
-}
+    header {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      background: linear-gradient(to right, #001538, #2575fc);
+      color: white;
+      flex-wrap: wrap;
+    }
 
-span {
-    flex: 1;
-    text-align: center;
-}
+    .logo img {
+      width: 70px;
+      border-radius: 10px;
+    }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    span {
+      flex: 1;
+      text-align: center;
+      font-size: 26px;
+    }
 
-.bx:hover {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgba(255, 255, 255, 0.566);
-    transition: 0.3s ease, box-shadow 0.3s ease;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+    }
 
-.carrinho {
-    display: flex;
-    padding: 8px;
-    gap: 20px;
-    color: white;
-}
+    .bx:hover {
+      color: rgba(255, 255, 255, 0.566);
+      transition: 0.3s ease;
+    }
 
-section {
-    flex: 1;
-    padding: 15px 15px;
-    border-radius: 10px;
-    background: linear-gradient(to bottom, #001538, #2575fc);
-}
+    .carrinho {
+      display: flex;
+      flex-direction: row;
+      padding: 8px;
+      gap: 20px;
+      flex-wrap: wrap;
+      color: white;
+    }
 
-aside {
-    min-width: 260px;
-    padding: 15px 15px;
-    border-radius: 10px;
-    background: linear-gradient(to bottom, #001538, #2575fc);
-}
+    section,
+    aside {
+      flex: 1;
+      min-width: 300px;
+      padding: 15px;
+      border-radius: 10px;
+      background: linear-gradient(to bottom, #001538, #2575fc);
+    }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
 
-th {
-    text-align: left;
-    padding: 10px 10px;
-    color: white;
-    text-transform: uppercase;
-}
+    th {
+      text-align: left;
+      padding: 10px;
+      color: white;
+      text-transform: uppercase;
+    }
 
-td {
-    padding: 20px 10px;
-    border-top: 3px solid #999999;
-}
+    td {
+      padding: 20px 10px;
+      border-top: 3px solid #999999;
+    }
 
-.x_circle {
-    border-radius: 100%;
-    background-color: #8b8787;
-}
+    .pimagem img {
+      width: 90px;
+      border-radius: 7px;
+    }
 
-.bx {
-    color: black;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
+    .produto {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 20px;
+    }
 
-.pimagem img {
-    width: 90px;
-    border-radius: 7px;
-}
+    .qnt {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-.produto {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 20px;
-}
+    .qnt button,
+    #comprar {
+      background-color: #2575fc;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
 
-#comprar {
-  background-color: #2575fc;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 10px;
-  width: 100%;
-}
+    .qnt button:hover,
+    #comprar:hover {
+      background-color: #1a5fd6;
+    }
 
-#comprar:hover {
-  background-color: #1a5fd6;
-}
+    .x_circle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #ff4c4c;
+      font-size: 20px;
+    }
 
+    #comprar {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px 15px;
+      font-weight: bold;
+    }
 
-.qnt {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
 
-.qnt button {
-  background-color: #2575fc;
-  border: none;
-  color: white;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+      .produto {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-.qnt button:hover {
-  background-color: #1a5fd6;
-}
-
-.x_circle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #ff4c4c;
-  font-size: 20px;
-}
+      .carrinho {
+        flex-direction: column;
+      }
+    }
